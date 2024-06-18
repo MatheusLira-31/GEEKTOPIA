@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo img{
+    height: 8vh;
+}
+
+nav {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a navbar ocupar toda a largura da tela */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #000;
+    height: 10vh;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.slide-box
+{
+    width:100%;
+    height:auto; 
+}
+
+.slide-box img
+{
+    margin-top:10vh;
+    width:100%;
+    height:100%;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.carousel-container {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    margin-left: 26vh;
+    margin-right: 26vh;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.carousel-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 45px;
+    max-width: 165px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#imgestatica img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#imgestatica2 img{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+
+h2 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.price {
+    color: red;
+    font-size: 1.2em;
+    
+}
+
+.price span {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+.payment {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+button {
+    background: #8C52FF;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 8vh;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.nav-button.prev {
+    left: 70px;
+}
+
+.nav-button.next {
+    right: 70px;
+}
+
+.section-btn-nav p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.feedback-card {
+    border: 1px solid #ddd;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 8px;
+    width: 195px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.feedback-card p {
+    font-size: 16px;
+}
+.feedback-card .date {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+}
+.stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 3vh;
+}
+
+.footer-social a {
+    margin: 10px;
+    display: inline-block;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-apps img {
+    height: auto;
+    max-width: 150px;
+}
+
+.footer-apps a {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.footer-section_payment, .footer-section_certifications {
+    margin-left: px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+.payment-methods img {
+    height: 50px;
+    max-width: 100px;
+    margin: 5px;
+}
+
+.certifications-logos img {
+    max-width: 150px;
+    margin-right: 50px;
+}
+
+.payment, .certifications {
+    flex-basis: 100%;
+}
+
+
+.direitos {
+    border-top: 1px solid #555;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#prgf1 {
+    margin-right: 50px;
+}
+
+.sobre{
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.sobre h1{
+    margin-top: 100px;
+    font-size:  50px;
+}
+.sobre p{
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        position: fixed; /* Fixa a nav-list também */
+        top: 10vh;
+        right: 0;
+        width: 100vw; /* Faz a nav-list ocupar toda a largura da viewport */
+        height: 0; /* Começa com altura zero */
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(-100%); /* Inicialmente fora da tela para cima */
+        transition: transform 0.3s ease-in, height 0.3s ease-in;
+        z-index: 999; /* Garante que a nav-list fique acima de outros elementos */
+      }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateY(0);
+        height: 90vh;
+    }
+
+    .nav-list.active li {
+        opacity: 1;
+        animation: navLinkFade 0.5s ease forwards;
+      }
+      
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+
+    .carousel{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-button.prev {
+        display: none;
+    }
+    
+    .nav-button.next {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer-social, .footer-apps, .payment-methods, .certifications-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-apps a, .payment-methods img, .certifications-logos img {
+        margin: 5px;
+    }
+
+    .footer-section_payment h4, .footer-section_certifications h4 {
+        text-align: center;
+    }
+
+    .direitos {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .direitos p{
+        font-size: 18px;
+    }
+
+    #prgf1 {
+        margin: 10px 0;
+    }
+
+    .sobre{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 16px;
+        padding: 20px;
+    }
+    
+}
+

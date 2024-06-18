@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="pagina_principal.css ">
+    <title>Geektopia</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMG/locoicon.png">
+    <script src="slide.js" defer></script>
+</head>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><img src="IMG/logo_fundoPreto.png" alt="Foto"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#camisetas">Camisetas</a></li>
+                <li><a href="#casaedec">Casa & Decoração</a></li>
+                <li><a href="#acessorios">Acessórios</a></li>
+                <li><a href="#funko">Funko</a></li>
+                <li><a href="pagina-sobrenos.html">Sobre Nós</a></li>
+                <li><a href="https://maps.app.goo.gl/MBBHuYaZt2FRdcbG8">Nossa loja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <slide>
+            <div class="slide-box">
+                <img name="slide" id="slide" src="Img/foto-desktop1.png"/>
+                <figcaption></figcaption>
+            </div>
+            <script language="JavaScript">
+                var cont=1;
+                var img1="IMG/foto-desktop1.png";
+                var img2="IMG/foto-desktop2.png";
+                var img3="IMG/foto-desktop3.png";
+                var img4="IMG/foto-desktop4.png";
+                var tempo=5000;
+                var start=setInterval("Carrossel()",tempo);
+                function Carrossel()
+                {
+                    document.images["slide"].src=eval("img"+cont);
+
+                    if (cont<4)
+                        cont++;
+                    else
+                        cont=1;
+                }
+            </script>
+        </slide>
+
+        <section class="section-btn-nav">
+            <p id="camisetas">CAMISETAS</p>
+        </section>
+
+        <div class="carousel-container" id="carousel1" >
+            <button class="nav-button prev" onclick="scrollCarousel(-1, 'carousel1')">&#10094;</button>
+
+            <div class="carousel">
+
+                <div class="carousel-item">
+                     
+                    <img src="IMG/camiseta_disney.png" alt="Camiseta Disney">
+                    <h2>Camiseta Diney 100 Years</h2>
+                    <p class="price">De R$ 129,99<br><span>R$ 100,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 16,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/camiseta_avatar.png" alt="Camiseta Azul Avatar">
+                    <h2>Camiseta Avatar Aang</h2>
+                    <p class="price">De R$ 169,99<br><span>R$ 100,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 16,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/camiseta_luffy.png" alt="MCamiseta Luffy">
+                    <h2>Camkseta Luffy One Piece</h2>
+                    <p class="price">De R$ 149,99<br><span>R$ 100,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 16,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+                     
+                    <img src="IMG/camiseta_spider-man.png" alt="">
+                    <h2>Camiseta Spider-Man Run</h2>
+                    <p class="price">De R$ 130,00<br><span>R$ 80,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 13,34 s/ juros no cartão</p>
+                    <a href="camisaspiderman.html">
+                        <button>COMPRAR</button>
+                    </a>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/camiseta_naruto.png" alt="Camiseta Naruto">
+                    <h2>Camiseta Naruto Uzumaki</h2>
+                    <p class="price">De R$ 199,99<br><span>R$ 130,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 21,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/camiseta_mickey.png" alt="Camiseta Mickey">
+                    <h2>Camiseta Mickey 100 anos</h2>
+                    <p class="price">De R$ 150,00<br><span>R$ 130,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 21,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/camiseta_starwars.png" alt="Camiseta Star Wars">
+                    <h2>Camiseta Star Wars Darth Vader</h2>
+                    <p class="price">De R$ 150,00<br><span>R$ 99,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 16,50 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                
+                <!-- Repita a estrutura do item do carrossel para os outros produtos -->
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(1, 'carousel1')">&#10095;</button>
+            
+        </div>
+        <section class="section-btn-nav">
+            <p  id="casaedec">Casa & Decoração</p>
+        </section>
+
+        <div class="carousel-container" id="carousel2">
+
+            <button class="nav-button prev" onclick="scrollCarousel(-1, 'carousel2')">&#10094;</button>
+            <div class="carousel">
+                
+
+                <div class="carousel-item">
+        
+                    <img src="IMG/caneca_starWars.png" alt="">
+                    <h2>Caneca Darth Vader</h2>
+                    <p class="price">De R$ 70,00<br><span>R$ 40,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 6,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/caneca_stich.png" alt="">
+                    <h2>Caneca Stich</h2>
+                    <p class="price">De R$ 70,00<br><span>R$ 40,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 6,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/garrafa_goku.png" alt="">
+                    <h2>Garrafa Goku </h2>
+                    <p class="price">De R$ 60,00<br><span>R$ 50,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 8,34 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/caneca_nasa.png" alt="">
+                    <h2>Caneca Nasa</h2>
+                    <p class="price">De R$ 80,00<br><span>R$ 50,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 8,34 s/ juros no cartão</p>
+                    <a href="canecanasa.html">
+                        <button>COMPRAR</button>
+                    </a>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/garrafa_luffy.png" alt="">
+                    <h2>Garrafa Luffy</h2>
+                    <p class="price">De R$ 60,00<br><span>R$ 45,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 7,5 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/copocomcanudo_luffy.png" alt="">
+                    <h2>Copo Luffy</h2>
+                    <p class="price">De R$ 90,00<br><span>R$ 60,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 10,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/garrafa_rickandmorry.png" alt="">
+                    <h2>Garrafa Pickle Rick</h2>
+                    <p class="price">De R$ 90,00<br><span>R$ 60,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 10,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                
+                <!-- Repita a estrutura do item do carrossel para os outros produtos -->
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(1, 'carousel2')">&#10095;</button>
+
+        </div>
+        <div id="imgestatica">
+            <img src="IMG/estatica1.jpeg" alt="">  
+        </div>
+        <section class="section-btn-nav">
+            <p id="acessorios">Acessórios</p>
+        </section>
+        <div class="carousel-container" id="carousel3">
+
+            <button class="nav-button prev" onclick="scrollCarousel(-1, 'carousel3')">&#10094;</button>
+            <div class="carousel">
+
+                <div class="carousel-item">
+                    <img src="IMG/chaveiro_drEstranho.png" alt="">
+                    <h2>Chaveiro Dr. Estranho</h2>
+                    <p class="price">De R$ 30,00<br><span>R$ 15,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 2,50 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/chaveiro_harryP.png" alt="">
+                    <h2>Chaveiro Harry Potter</h2>
+                    <p class="price">De R$ 25,00<br><span>R$ 10,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 1,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMG/chaveiro_st.png" alt="">
+                    <h2>Chaveiro Stranger Things</h2>
+                    <p class="price">De R$ 20,00<br><span>R$ 10,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 1,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/chaveiro_hulk.png" alt="">
+                    <h2>Chaveiro Incrivel Hulk</h2>
+                    <p class="price">De R$ 30,00<br><span>R$ 20,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 3,34 s/ juros no cartão</p>
+                    <a href="chaveirohulk.html">
+                        <button>COMPRAR</button>
+                    </a>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/chaveiro_trunks.png" alt="">
+                    <h2>Chaveiro Trunks Dragon Ball</h2>
+                    <p class="price">De R$ 40,00<br><span>R$ 20,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 3,34 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/chaveiro_superH.png" alt="">
+                    <h2>Chaveiro Super Homem</h2>
+                    <p class="price">De R$ 40,00<br><span>R$ 15,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 2,50 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/chaveiro_millenniumfalcon.png" alt="">
+                    <h2>Chaveiro Millennium Falcon</h2>
+                    <p class="price">De R$ 40,00<br><span>R$ 10,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 1,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+
+                <!-- Repita a estrutura do item do carrossel para os outros produtos -->
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(1, 'carousel3')">&#10095;</button>
+                 
+        </div>
+        <section class="section-btn-nav">
+            <p id="funko">Funko Pop's</p>
+        </section>
+        <div class="carousel-container" id="carousel4">
+
+            <button class="nav-button prev" onclick="scrollCarousel(-1, 'carousel4')">&#10094;</button>
+            <div class="carousel">
+
+                 <div class="carousel-item">
+                    <img src="IMG/funko_1.png" alt="">
+                    <h2>Funko Pop Mad-Eye Moody</h2>
+                    <p class="price">De R$ 150,00<br><span>R$ 100,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 16,67 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/funko_2.png" alt="">
+                    <h2>Funko Pop Wicket Star Star Wars</h2>
+                    <p class="price">De R$ 130,00<br><span>R$ 90,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 15,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/funko_4.png" alt="">
+                    <h2>Funko Pop BB-8 Star Wars</h2>
+                    <p class="price">De R$ 200,00<br><span>R$ 150,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 25,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/funko_3.png" alt="">
+                    <h2>Funko Pop E.T With Flowers</h2>
+                    <p class="price">De R$ 100,00<br><span>R$ 80,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 13,34 s/ juros no cartão</p>
+                    <a href="funko3.html">
+                        <button>COMPRAR</button>
+                    </a>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/funko_5.png" alt="">
+                    <h2>Funko Pop King Shark</h2>
+                    <p class="price">De R$ 180,00<br><span>R$ 120,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 20,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/funko_6.png" alt="">
+                    <h2>Funko Pop Tanjiro With Noodles</h2>
+                    <p class="price">De R$ 200,00<br><span>R$ 150,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 25,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                <div class="carousel-item">
+        
+                    <img src="IMG/funko_7.png" alt="">
+                    <h2>Funko Pop Walt Disney</h2>
+                    <p class="price">De R$ 180,00<br><span>R$ 140,00</span></p>
+                    <p class="payment">À vista no boleto ou pix 10% de desconto<br>ou em até 6x de R$ 30,00 s/ juros no cartão</p>
+                    <button>COMPRAR</button>
+                </div>
+                
+                <!-- Repita a estrutura do item do carrossel para os outros produtos -->
+            </div>
+            <button class="nav-button next" onclick="scrollCarousel(1, 'carousel4')">&#10095;</button>
+        
+        </div>
+
+        <div id="imgestatica2">
+            <img src="IMG/estatica2.jpeg" alt="">
+        </div>
+
+        <p>VEJA O QUE OS NOSSOS CLIENTES DIZEM</p>
+        <div class="feedback-container">
+            <div class="feedback-card">
+                <p>"Entrega rápida e satisfacao garantida ao cliente !"</p>
+                <div class="stars">★★★★★</div>
+                <div class="date">Vitor<br>01/05/2024</div>
+            </div>
+            <div class="feedback-card">
+                <p>"Produtos exclusivos e de ótima qualidade."</p>
+                <div class="stars">★★★★★</div>
+                <div class="date">Ana C.<br>27/05/2024</div>
+            </div>
+            <div class="feedback-card">
+                <p>"Ótima loja, variedade de produtos diferentes e legais. "</p>
+                <div class="stars">★★★★★</div>
+                <div class="date">Samuel C.<br>27/05/2024</div>
+            </div>
+        </div>
+
+        <footer class="footer" id="sobre_nos" >
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="img/logo_fundoPreto.png" alt="Geektopia Logo" class="footer-logo">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/geektopia_oficial/"><img src="img/icon.insta.png" alt="Instagram"></a>
+                        <a href="https://twitter.com/Geektopia_ofc"><img src="img/icon.twitter.png" alt="Twitter"></a>
+                        <a href="https://api.whatsapp.com/send?phone=5511984083105&text=OII%20BB"><img src="img/icon.zap.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Promoções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Minha Conta</h4>
+                    <ul>
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Acompanhar Pedido</a></li>
+                        <li><a href="#">Meus Dados</a></li>
+                        <li><a href="https://maps.app.goo.gl/E3aTyDB3AdAVFXmq8">Meu Endereço</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511984083105&text=OII%20BB">Fale Conosco</a></li>
+                        <li><a href="#">FAQ | Dúvidas Frequentes</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Política de Frete Grátis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Baixe nosso app</h4>
+                    <div class="footer-apps">
+                        <a href="#"><img src="img/logo_playStr.webp" alt="Google Play"></a>
+                        <a href="#"><img src="img/logo_Appstr.webp" alt="App Store"></a>
+                    </div>
+                </div>
+                <div class="footer-section_payment">
+                    <h4>Formas de pagamento</h4>
+                    <div class="payment-methods">
+                        <img src="img/icon.visa.png" alt="Visa">
+                        <img src="img/icon.mastercard.png" alt="Mastercard">
+                        <img src="img/icon.picpay.png" alt="PicPay">
+                        <br>
+                        <img src="img/icon.pix.png" alt="Pix">
+                        <img src="img/icon.googlepay.png" alt="GooglePay">
+                        <img src="img/icon.apppay.png" alt="ApplePay">
+                    </div>
+                </div>
+                <div class="footer-section_certifications">
+                    <h4>Certificados e Segurança</h4>
+                    <div class="certifications-logos">
+                        <img src="img/logo.compraBoa.png" alt="compraBoa">
+                        <img src="img/logo.reclameaqui.png" alt="Reclame Aqui">
+                        <img src="img/logo.compraSegura.png" alt="Loja Confiável">
+                    </div>
+                </div >
+
+                <div class="direitos">
+                    <p id="prgf1"> &copy; GEEKTOPIA. TODOS OD DIREITOS RESERVADOS | CNPJ: 18.053.365/0001-40 <br> R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP | CEP 05089-000.</p> &ensp;
+                    <p id="prgf2">DESENVOLVIDO POR:</p>
+                    <img src="img/logo_Inove.png" alt="LogoInoveDevs">
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>    
+</html>

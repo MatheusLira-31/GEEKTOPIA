@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo img{
+    height: 8vh;
+}
+
+nav {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a navbar ocupar toda a largura da tela */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #000;
+    height: 10vh;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.product-details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 16px;
+    color: #888;
+    display: block;
+}
+
+.discount {
+    color: green;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: purple;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.buy-button:hover {
+    background-color: darkviolet;
+}
+
+.sizes {
+    margin-bottom: 20px;
+}
+
+.sizes span {
+    margin-right: 10px;
+}
+
+.sizes button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.sizes button:hover {
+    background-color: #ddd;
+}
+
+.cep {
+    display: flex;
+}
+
+.cep input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.cep button {
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cep button:hover {
+    background-color: darkviolet;
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 3vh;
+}
+
+.footer-social a {
+    margin: 10px;
+    display: inline-block;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-apps img {
+    height: auto;
+    max-width: 150px;
+}
+
+.footer-apps a {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.footer-section_payment, .footer-section_certifications {
+    margin-left: px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+
+.payment-methods img {
+    height: 50px;
+    max-width: 100px;
+    margin: 5px;
+}
+
+.certifications-logos img {
+    max-width: 150px;
+    margin-right: 50px;
+}
+
+.payment, .certifications {
+    flex-basis: 100%;
+}
+
+
+.direitos {
+    border-top: 1px solid #555;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#prgf1 {
+    margin-right: 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        position: fixed; /* Fixa a nav-list também */
+        top: 10vh;
+        right: 0;
+        width: 100vw; /* Faz a nav-list ocupar toda a largura da viewport */
+        height: 0; /* Começa com altura zero */
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateY(-100%); /* Inicialmente fora da tela para cima */
+        transition: transform 0.3s ease-in, height 0.3s ease-in;
+        z-index: 999; /* Garante que a nav-list fique acima de outros elementos */
+      }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateY(0);
+        height: 90vh;
+    }
+
+    .nav-list.active li {
+        opacity: 1;
+        animation: navLinkFade 0.5s ease forwards;
+      }
+      
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+
+    .carousel{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-button.prev {
+        display: none;
+    }
+    
+    .nav-button.next {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .sizes button {
+       padding: 10px;
+    }
+    
+    .sizes button:hover {
+        background-color: #ddd;
+    }
+
+
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer-social, .footer-apps, .payment-methods, .certifications-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-apps a, .payment-methods img, .certifications-logos img {
+        margin: 5px;
+    }
+
+    .footer-section_payment h4, .footer-section_certifications h4 {
+        text-align: center;
+    }
+
+    .direitos {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #prgf1 {
+        margin: 10px 0;
+    }
+    
+}
+
