@@ -343,6 +343,12 @@ button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.prgfavalicao{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 @media (max-width: 768px) {
     .nav-list {
